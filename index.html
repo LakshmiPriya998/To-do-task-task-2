@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="todo-container">
+    <h2>To-Do List</h2>
+
+    <div class="todo-item">
+        <input type="checkbox">
+        <span>Example Task 1</span>
+    </div>
+
+    <div class="todo-item">
+        <input type="checkbox">
+        <span>Example Task 2</span>
+    </div>
+
+    <div class="add-todo">
+        <input type="text" id="newTask" placeholder="Add a new task">
+        <button onclick="addTask()">Add</button>
+    </div>
+</div>
+
+<script>
+    function addTask() {
+        var inputElement = document.getElementById('newTask');
+        var taskText = inputElement.value.trim();
+
+        if (taskText !== '') {
+            var todoContainer = document.querySelector('.todo-container');
+
+            var todoItem = document.createElement('div');
+            todoItem.className = 'todo-item';
+
+            var checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+
+            var span = document.createElement('span');
+            span.textContent = taskText;
+
+            todoItem.appendChild(checkbox);
+            todoItem.appendChild(span);
+
+            todoContainer.insertBefore(todoItem, document.querySelector('.add-todo'));
+
+            // Clear the input field
+            inputElement.value = '';
+        }
+    }
+</script>
+
+</body>
+</html>
