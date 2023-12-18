@@ -1,0 +1,64 @@
+body {
+    body 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://storage.googleapis.com/profit-prod/wp-content/uploads/2021/03/3a50174d-online-to-do-list.jpg'); /* Replace 'background-image.jpg' with your actual image file */
+    background-size: cover;
+}
+
+.todo-container {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Rest of your CSS styles remain unchanged */
+
+}
+
+.todo-container {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo-item input {
+    margin-right: 10px;
+}
+
+.add-todo {
+    display: flex;
+    margin-top: 20px;
+}
+
+.add-todo input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-todo button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
